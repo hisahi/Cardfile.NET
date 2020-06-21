@@ -1,0 +1,124 @@
+LanguageName=Suomi (Finnish)
+ProgramName=Kortisto (Cardfile.NET)
+ShortName=Kortisto
+TitleFormat={0} - {1}
+
+# Generic
+OK=OK
+Cancel=Peruuta
+
+# Other strings
+
+OpenFilter=Cardfile.NET-kortistotiedosto (*.CRDX)|*.CRDX|Klassinen kortistotiedosto (*.CRD)|*.CRD|Kaikki tiedostot (*.*)|*
+SaveFilter=Cardfile.NET-kortistotiedosto, pakattu (*.CRDX)|*.CRDX|Cardfile.NET-kortistotiedosto (*.CRDX)|*.CRDX|Kaikki tiedostot (*.*)|*
+ImportAttachmentFilter=Kaikki tiedostot (*.*)|*
+ExportAttachmentFilter={1} (*{0})|*{0}|Kaikki tiedostot (*.*)|*
+ExportAttachmentFilterNoExt=Kaikki tiedostot (*.*)|*
+UnknownExtension={0}-tiedosto
+DefaultLanguage=(Järjestelmän kieli)
+CardView=Korttinäkymä
+EditView=Muokkausnäkymä
+AttachmentView=Liitenäkymä
+ListView=Luettelonäkymä
+FileUnsaved=Tiedostoa on muutettu.\nTallennetaanko muutokset?
+LargeAttachment=Valittu tiedosto on suuri. Liitteiden tulisi yleensä olla pieniä.\nJos liität suuria tiedostoja, levyn ja muistin käyttö voi kasvaa huomattavasti.\n\nJatketaanko?
+CannotImportAttachment=Liitettä ei onnistuttu tuomaan. Varmista, että sinulla on pääsyoikeudet valitsemaasi tiedostoon.
+CannotExportAttachment=Liitettä ei onnistuttu viemään. Varmista, että sinulla on riittävästi levytilaa ja sinulla on oikeudet kirjoittaa valitsemaasi tiedostoon.
+NoSuchCard=Korttia ei löytynyt: "{0}".
+CannotFind=Ei löytynyt: "{0}".
+AuthorInfo=tehnyt {0} ja {1}
+ProgramInspiration=Nykyaikainen versio vanhojen Windows-järjestelmien "Kortisto"-ohjelmasta.
+ProgramVersion=ohjelman versio {0}
+DefaultPrintHeader=&f
+DefaultPrintFooter=Sivu &p
+CardTooLargeToFitOnPage=Kortti ei mahdu sivulle
+Unnamed=(NIMETÖN)
+
+# {0} is current card number (1 is the first card), {1} is card count
+# One, Other, etc. corresponds to CLDR cardinal numeral classes.
+# see Localization/Pluralization.cs for implementation
+CardCount={1} korttia
+CardCount.One={1} kortti
+CardCount.Other={1} korttia
+
+ListColumnIndex=Otsikko
+ListColumnContents=Teksti
+
+# Control text
+
+fileToolStripMenuItem.Text=&Tiedosto
+fileNewToolStripMenuItem.Text=&Uusi
+fileOpenToolStripMenuItem.Text=&Avaa...
+fileSaveToolStripMenuItem.Text=&Tallenna
+fileSaveAsToolStripMenuItem.Text=Tallenna &nimellä...
+filePrintToolStripMenuItem.Text=Tul&osta
+filePrintAllToolStripMenuItem.Text=Tulosta ka&ikki...
+filePrintPreviewToolStripMenuItem.Text=&Esikatselu
+filePageSetupToolStripMenuItem.Text=&Sivun asetukset
+fileMergeToolStripMenuItem.Text=&Yhdistä...
+fileExitToolStripMenuItem.Text=&Lopeta
+editToolStripMenuItem.Text=&Muokkaa
+editUndoToolStripMenuItem.Text=K&umoa
+editRedoToolStripMenuItem.Text=Tee uudelleen
+editCutToolStripMenuItem.Text=&Leikkaa
+editCopyToolStripMenuItem.Text=&Kopioi
+editPasteToolStripMenuItem.Text=L&iitä
+editIndexToolStripMenuItem.Text=Ot&sikko...
+editRestoreToolStripMenuItem.Text=&Palauta
+editShowFileToolStripMenuItem.Text=&Näytä liite
+editImportFileToolStripMenuItem.Text=T&uo liite...
+editExportFileToolStripMenuItem.Text=&Vie liite...
+editOptionsToolStripMenuItem.Text=&Asetukset...
+viewToolStripMenuItem.Text=&Näkymä
+viewCardToolStripMenuItem.Text=&Kortti
+viewEditToolStripMenuItem.Text=&Muokkaus
+viewFileToolStripMenuItem.Text=L&iite
+viewListToolStripMenuItem.Text=&Luettelo
+cardToolStripMenuItem.Text=&Kortti
+cardAddToolStripMenuItem.Text=&Lisää
+cardDeleteToolStripMenuItem.Text=&Poista
+cardDuplicateToolStripMenuItem.Text=&Tee kopio
+searchToolStripMenuItem.Text=&Etsi
+searchGoToToolStripMenuItem.Text=&Siirry...
+searchFindToolStripMenuItem.Text=&Etsi...
+searchFindNextToolStripMenuItem.Text=E&tsi seuraava
+helpToolStripMenuItem.Text=&Ohje
+helpOnlineToolStripMenuItem.Text=&Ohje (verkossa)
+helpAboutToolStripMenuItem.Text=&Tietoja...
+labelIndexText.Text=&Otsikkorivi:
+labelGoToText.Text=&Siirry:
+buttonOpenAttachment.Text=&Avaa
+buttonImportAttachment.Text=&Tuo...
+buttonExportAttachment.Text=&Vie...
+buttonRemoveAttachment.Text=&Poista
+optionsLabelLanguage.Text=&Kieli:
+labelCardSize.Text=K&ortin koko:
+buttonFindNext.Text=Et&si seuraava
+labelFindWhat.Text=&Etsittävä:
+checkBoxMatchCase.Text=Sa&ma kirjainkoko
+groupBoxDirection.Text=Suunta
+radioButtonDirectionBack.Text=&Taaksepäin
+radioButtonDirectionForward.Text=&Eteenpäin
+buttonNormalPageSetup.Text=&Sivun asetukset
+labelPageSetupButton.Text=Säädä sivun kokoa, suuntaa ja marginaaleja.
+labelPageHeader.Text=Sivun &yläviite:
+labelPageFooter.Text=Sivun &alaviite:
+labelPrintMode.Text=Tulostus&tila:
+labelCardSize.Text=K&ortin koko:
+comboBoxCardSize.US3_5.Text=3x5 tuumaa (40x12 merkkiä)
+comboBoxCardSize.US4_6.Text=4x6 tuumaa (48x16 merkkiä)
+comboBoxCardSize.US5_8.Text=5x8 tuumaa (64x20 merkkiä)
+comboBoxCardSize.ISO.Text=ISO A7 (74x105 mm, 32x12 merkkiä)
+comboBoxCardSize.CUSTOM.Text=Mukautettu koko
+labelCardSizeMeasurements.Text={1:0.#} x {0:0.#}
+labelFontSize.Text=Ki&rjasinkoko:
+radioButtonSizeIn.Text=tuumaa
+radioButtonSizeMm.Text=mm
+radioButtonPrintCard.Text=&Kortti
+radioButtonPrintPage.Text=&Sivu
+FileUpdateDialog.Text=Tiedostojen päivitys
+labelUpdateFiles.Text=Seuraavia liitetiedostoja on muokattu. Valitse, mitkä niistä päivitetään kortistotiedostoon.
+buttonFileCheckAll.Text=&Kaikki
+buttonCheckNone.Text=&Ei mitään
+buttonInvertCheck.Text=Kää&nnä
+buttonFilesUpdate.Text=&Päivitä

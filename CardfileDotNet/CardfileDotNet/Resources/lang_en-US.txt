@@ -1,0 +1,124 @@
+LanguageName=English (United States)
+ProgramName=Cardfile.NET
+ShortName=Cardfile
+TitleFormat={0} - {1}
+
+# Generic
+OK=OK
+Cancel=Cancel
+
+# Other strings
+
+OpenFilter=Cardfile.NET file (*.CRDX)|*.CRDX|Classic Card File (*.CRD)|*.CRD|All files (*.*)|*
+SaveFilter=Cardfile.NET file, compressed (*.CRDX)|*.CRDX|Cardfile.NET file (*.CRDX)|*.CRDX|All files (*.*)|*
+ImportAttachmentFilter=All files (*.*)|*
+ExportAttachmentFilter={1} (*{0})|*{0}|All files (*.*)|*
+ExportAttachmentFilterNoExt=All files (*.*)|*
+UnknownExtension={0} File
+DefaultLanguage=(Use system language)
+CardView=Card View
+EditView=Edit View
+AttachmentView=Attachment View
+ListView=List View
+FileUnsaved=This file has been changed.\nSave the changes?
+LargeAttachment=The selected file is large. Attachments should usually be small.\nAttaching large files may significantly increase disk and\nmemory usage.\n\nContinue?
+CannotImportAttachment=An error occurred while importing the attachment. Make sure you have access to the file you are trying to import.
+CannotExportAttachment=An error occurred while exporting the attachment. Make sure the file is not read-only and that you have sufficient disk space.
+NoSuchCard=Card not found: "{0}".
+CannotFind=Cannot find "{0}".
+AuthorInfo=by {0} and {1}
+ProgramInspiration=A modern recreation of the "Cardfile" program in older versions of Windows.
+ProgramVersion=program version {0}
+DefaultPrintHeader=&f
+DefaultPrintFooter=Page &p
+CardTooLargeToFitOnPage=Card too large to fit on page
+Unnamed=(UNNAMED)
+
+# {0} is current card number (1 is the first card), {1} is card count
+# One, Other, etc. corresponds to CLDR cardinal numeral classes.
+# see Localization/Pluralization.cs for implementation
+CardCount={1} Cards
+CardCount.One={1} Card
+CardCount.Other={1} Cards
+
+ListColumnIndex=Index
+ListColumnContents=Text
+
+# Control text
+
+fileToolStripMenuItem.Text=&File
+fileNewToolStripMenuItem.Text=&New
+fileOpenToolStripMenuItem.Text=&Open...
+fileSaveToolStripMenuItem.Text=&Save
+fileSaveAsToolStripMenuItem.Text=Save &As...
+filePrintToolStripMenuItem.Text=&Print
+filePrintAllToolStripMenuItem.Text=Print A&ll...
+filePrintPreviewToolStripMenuItem.Text=Print Previe&w
+filePageSetupToolStripMenuItem.Text=Page Se&tup
+fileMergeToolStripMenuItem.Text=&Merge...
+fileExitToolStripMenuItem.Text=E&xit
+editToolStripMenuItem.Text=&Edit
+editUndoToolStripMenuItem.Text=&Undo
+editRedoToolStripMenuItem.Text=Redo
+editCutToolStripMenuItem.Text=Cu&t
+editCopyToolStripMenuItem.Text=&Copy
+editPasteToolStripMenuItem.Text=&Paste
+editIndexToolStripMenuItem.Text=&Index...
+editRestoreToolStripMenuItem.Text=&Restore
+editShowFileToolStripMenuItem.Text=&Show Attachment
+editImportFileToolStripMenuItem.Text=I&mport Attachment...
+editExportFileToolStripMenuItem.Text=E&xport Attachment...
+editOptionsToolStripMenuItem.Text=&Options...
+viewToolStripMenuItem.Text=&View
+viewCardToolStripMenuItem.Text=&Card
+viewEditToolStripMenuItem.Text=&Edit
+viewFileToolStripMenuItem.Text=&Attachment
+viewListToolStripMenuItem.Text=&List
+cardToolStripMenuItem.Text=&Card
+cardAddToolStripMenuItem.Text=&Add
+cardDeleteToolStripMenuItem.Text=&Delete
+cardDuplicateToolStripMenuItem.Text=Du&plicate
+searchToolStripMenuItem.Text=&Search
+searchGoToToolStripMenuItem.Text=&Go To...
+searchFindToolStripMenuItem.Text=&Find...
+searchFindNextToolStripMenuItem.Text=Find &Next
+helpToolStripMenuItem.Text=&Help
+helpOnlineToolStripMenuItem.Text=&Help (Online)
+helpAboutToolStripMenuItem.Text=&About
+labelIndexText.Text=&Index Text:
+labelGoToText.Text=&Go To:
+buttonOpenAttachment.Text=&Open
+buttonImportAttachment.Text=&Import...
+buttonExportAttachment.Text=&Export...
+buttonRemoveAttachment.Text=&Remove
+optionsLabelLanguage.Text=Language:
+labelCardSize.Text=Card Si&ze:
+buttonFindNext.Text=&Find Next
+labelFindWhat.Text=Fi&nd What:
+checkBoxMatchCase.Text=Match &case
+groupBoxDirection.Text=Direction
+radioButtonDirectionBack.Text=&Backwards
+radioButtonDirectionForward.Text=&Forwards
+buttonNormalPageSetup.Text=Page &Setup
+labelPageSetupButton.Text=Adjust page orientation, paper size and margins.
+labelPageHeader.Text=Page &Header:
+labelPageFooter.Text=Page &Footer:
+labelPrintMode.Text=Print &Mode:
+labelCardSize.Text=Card Si&ze:
+comboBoxCardSize.US3_5.Text=3x5 in (40x12 ch)
+comboBoxCardSize.US4_6.Text=4x6 in (48x16 ch)
+comboBoxCardSize.US5_8.Text=5x8 in (64x20 ch)
+comboBoxCardSize.ISO.Text=ISO A7 (74x105 mm, 32x12 ch)
+comboBoxCardSize.CUSTOM.Text=Custom size
+labelCardSizeMeasurements.Text={1:0.#} x {0:0.#}
+labelFontSize.Text=&Font Size:
+radioButtonSizeIn.Text=in
+radioButtonSizeMm.Text=mm
+radioButtonPrintCard.Text=&Card
+radioButtonPrintPage.Text=&Page
+FileUpdateDialog.Text=Update files
+labelUpdateFiles.Text=The following attached files have been modified. Please select which files to update in the card file.
+buttonFileCheckAll.Text=Check &All
+buttonCheckNone.Text=Check &None
+buttonInvertCheck.Text=&Invert
+buttonFilesUpdate.Text=&Update

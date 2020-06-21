@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{820DC9FC-B92F-4756-8AA8-DC0E35B95952}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CardfileDotNet</RootNamespace>
+    <AssemblyName>CardfileDotNet</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>cardfile.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Data\AttachmentFile.cs" />
+    <Compile Include="Data\Card.cs" />
+    <Compile Include="Data\Cardfile.cs" />
+    <Compile Include="Data\CardPaperSize.cs" />
+    <Compile Include="Data\LimitedStack.cs" />
+    <Compile Include="Data\MaybeString.cs" />
+    <Compile Include="Data\WindowState.cs" />
+    <Compile Include="Data\UndoBuffer.cs" />
+    <Compile Include="IO\OleObject.cs" />
+    <Compile Include="Localization\Pluralization.cs" />
+    <Compile Include="Logic\FindRequest.cs" />
+    <Compile Include="Logic\OptionHandler.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\AboutDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\AboutDialog.Designer.cs">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\BindableListView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\BindableListViewColumn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\CardPrinter.cs" />
+    <Compile Include="UI\CustomPageSetupDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CustomPageSetupDialog.Designer.cs">
+      <DependentUpon>CustomPageSetupDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FileUpdateDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\FileUpdateDialog.Designer.cs">
+      <DependentUpon>FileUpdateDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ICommitable.cs" />
+    <Compile Include="UI\IndexDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\IndexDialog.Designer.cs">
+      <DependentUpon>IndexDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Localization\ILocalizable.cs" />
+    <Compile Include="Localization\LocalizableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Localization\LocalizableUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Localization\Language.cs" />
+    <Compile Include="UI\OptionsDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\OptionsDialog.Designer.cs">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SearchDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SearchDialog.Designer.cs">
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Util\TempDirectory.cs" />
+    <Compile Include="Util\MimeTypeDetector.cs" />
+    <Compile Include="Util\Win32Util.cs" />
+    <Compile Include="Util\MathUtil.cs" />
+    <Compile Include="Data\RtfTextConverter.cs" />
+    <Compile Include="IO\CrdDecoder.cs" />
+    <Compile Include="IO\CrdxDecoder.cs" />
+    <Compile Include="IO\CrdxEncoder.cs" />
+    <Compile Include="Logic\VolatileState.cs" />
+    <Compile Include="UI\BindableToolStripMenuItem.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UI\CardUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\CardUserControl.Designer.cs">
+      <DependentUpon>CardUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\CardViewUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\CardViewUserControl.Designer.cs">
+      <DependentUpon>CardViewUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\EditViewUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\EditViewUserControl.Designer.cs">
+      <DependentUpon>EditViewUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\FileViewUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\FileViewUserControl.Designer.cs">
+      <DependentUpon>FileViewUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\GoToDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\GoToDialog.Designer.cs">
+      <DependentUpon>GoToDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\LeftRightControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\LeftRightControl.Designer.cs">
+      <DependentUpon>LeftRightControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\ListViewUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UI\ListViewUserControl.Designer.cs">
+      <DependentUpon>ListViewUserControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="IO\SeekableBinaryReader.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\AboutDialog.resx">
+      <DependentUpon>AboutDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CardUserControl.resx">
+      <DependentUpon>CardUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CardViewUserControl.resx">
+      <DependentUpon>CardViewUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CustomPageSetupDialog.resx">
+      <DependentUpon>CustomPageSetupDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\EditViewUserControl.resx">
+      <DependentUpon>EditViewUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FileUpdateDialog.resx">
+      <DependentUpon>FileUpdateDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\FileViewUserControl.resx">
+      <DependentUpon>FileViewUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\IndexDialog.resx">
+      <DependentUpon>IndexDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\GoToDialog.resx">
+      <DependentUpon>GoToDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\LeftRightControl.resx">
+      <DependentUpon>LeftRightControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ListViewUserControl.resx">
+      <DependentUpon>ListViewUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\OptionsDialog.resx">
+      <DependentUpon>OptionsDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\SearchDialog.resx">
+      <DependentUpon>SearchDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="cardfile.ico" />
+    <Content Include="Notes\crdxspec.txt" />
+    <None Include="Resources\cardfileLogo.png" />
+    <None Include="Resources\lang_fi-FI.txt" />
+    <None Include="Resources\lang_en-US.txt" />
+    <None Include="Resources\cardfile.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\MimeTypeMap\src\MimeTypes\MimeTypes.csproj">
+      <Project>{8b59ac20-2f90-4424-9d5c-f458b9d1c6cf}</Project>
+      <Name>MimeTypes</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

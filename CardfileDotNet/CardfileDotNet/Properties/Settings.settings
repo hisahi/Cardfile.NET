@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CardfileDotNet.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="Language" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="PrintFooter" Type="CardfileDotNet.Data.MaybeString" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="PrintHeader" Type="CardfileDotNet.Data.MaybeString" Scope="User">
+      <Value Profile="(Default)">false</Value>
+    </Setting>
+    <Setting Name="CardWidth" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">40</Value>
+    </Setting>
+    <Setting Name="CardHeight" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">12</Value>
+    </Setting>
+    <Setting Name="PrintMode" Type="CardfileDotNet.UI.CardPrintMode" Scope="User">
+      <Value Profile="(Default)">CardFrame</Value>
+    </Setting>
+    <Setting Name="CardSize" Type="CardfileDotNet.Data.CardPaperSize" Scope="User">
+      <Value Profile="(Default)">US3_5</Value>
+    </Setting>
+    <Setting Name="RoundCustomToNearestMm" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="FontSize" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">9</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

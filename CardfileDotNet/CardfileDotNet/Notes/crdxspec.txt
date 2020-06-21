@@ -1,0 +1,91 @@
+CRDX
+	'CFDN'
+	UINT32		version
+	UINT32		compression algorithm
+				0 = uncompressed
+				1 = gzip
+	UINT64		total size of file beyond this point (compressed size if compressed)
+				can be 0 if file is not compressed
+	UINT32		number of cards
+	UINT32		currently selected card index
+	UINT32		(v>=2) number of card groups
+	UINT32		reserved
+	UINT32		reserved
+	UINT32		reserved
+	UINT32		reserved
+	for every card (meta):
+		UINT64		offset to card text data
+		UINT64		offset to associated file data, or (UINT64)-1 if none
+		UINT32		group of this card, or -1 (0xFFFFFFFF) for no group
+		UINT32		reserved
+		UINT32		reserved
+		UINT32		length of card "index" text
+		UTF8		card "index" text
+	for every card group:
+		UINT32		length of card group name
+		UTF8		card group name
+	for every card (text data):
+		UINT64		length of raw text data
+		UTF8		raw text data
+	for every card with an associated file:
+		UINT32		file name length
+		UTF8		file name
+		UINT32		file MIME type length
+		UTF8		MIME type
+		UINT64		length of associated file
+		BLOB		associated file
+		
+
+
+
+
+
+
+
+
+
+
+
+
+
+CP1252(?)
+	signature		MGC
+		INT16LE		quantity
+		NoteTitle*
+			INT16LE		0?
+			INT16LE		0?
+			INT16LE		0?
+			INT32LE		starting offset
+			ASCIIZ[41]	index
+		NoteText*
+		starting from offset...
+			INT16LE		length
+			
+
+CP1252(?)
+	signature		RRG
+		INT16LE		quantity
+		NoteTitle*
+			INT16LE		0?
+			INT16LE		0?
+			INT16LE		0?
+			INT32LE		starting offset
+			ASCIIZ[41]	index
+		NoteText*
+		starting from offset...
+			INT16LE		length
+			
+
+UTF16
+	signature		DKO
+	signature		MGC
+		INT16LE		quantity
+		NoteTitle*
+			INT16LE		0?
+			INT16LE		0?
+			INT16LE		0?
+			INT32LE		starting offset
+			UTF16Z[41]	index
+		NoteText*
+		starting from offset...
+			
