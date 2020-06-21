@@ -53,13 +53,13 @@ namespace CardfileDotNet.UI
         public string PageHeader
         {
             get => OptionHandler.PageHeader;
-            set => Properties.Settings.Default.PrintHeader.Value = value;
+            set => Properties.Settings.Default.PrintHeader = OptionHandler.SetMaybeStringValue(value);
         }
 
         public string PageFooter
         {
             get => OptionHandler.PageFooter;
-            set => Properties.Settings.Default.PrintFooter.Value = value;
+            set => Properties.Settings.Default.PrintFooter = OptionHandler.SetMaybeStringValue(value);
         }
 
         public bool PrintModePage

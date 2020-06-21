@@ -55,7 +55,6 @@
     <Compile Include="Data\Cardfile.cs" />
     <Compile Include="Data\CardPaperSize.cs" />
     <Compile Include="Data\LimitedStack.cs" />
-    <Compile Include="Data\MaybeString.cs" />
     <Compile Include="Data\WindowState.cs" />
     <Compile Include="Data\UndoBuffer.cs" />
     <Compile Include="IO\OleObject.cs" />

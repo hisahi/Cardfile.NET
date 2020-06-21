@@ -27,8 +27,9 @@ namespace CardfileDotNet.Logic
         public static float CardHeightMm => Properties.Settings.Default.CardSize.GetCardHeightPt() / 72f * 25.4f;
         public static int FontSize => ClampFontSize(Properties.Settings.Default.FontSize);
 
-        public static string PageHeader => Properties.Settings.Default.PrintHeader.Value ?? Language.Get("DefaultPrintHeader", "{file}");
-        public static string PageFooter => Properties.Settings.Default.PrintFooter.Value ?? Language.Get("DefaultPrintFooter", "Page {page}");
+        public static string PageHeader => GetMaybeStringValue(Properties.Settings.Default.PrintHeader) ?? Language.Get("DefaultPrintHeader", "{file}");
+        public static string PageFooter => GetMaybeStringValue(Properties.Settings.Default.PrintFooter) ?? Language.Get("DefaultPrintFooter", "Page {page}");
+
         public static CardPrintMode PrintMode => Properties.Settings.Default.PrintMode;
 
         public static int ClampCardWidth(int width)
@@ -46,10 +47,13 @@ namespace CardfileDotNet.Logic
             return MathUtil.Clamp(size, FONT_MINIMUM_SIZE, FONT_MAXIMUM_SIZE);
         }
 
-        public static void OnOptionUpdate()
+        internal static void OnOptionUpdate()
         {
             OptionsUpdated?.Invoke(null, new EventArgs());
         }
+
+        public static string GetMaybeStringValue(string v) => v.StartsWith(":") ? v.Substring(1) : null;
+        public static string SetMaybeStringValue(string v) => v != null ? ":" + v : "";
 
         public static event EventHandler OptionsUpdated;
     }

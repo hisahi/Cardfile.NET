@@ -37,10 +37,10 @@ namespace CardfileDotNet.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("false")]
-        public global::CardfileDotNet.Data.MaybeString PrintFooter {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PrintFooter {
             get {
-                return ((global::CardfileDotNet.Data.MaybeString)(this["PrintFooter"]));
+                return ((string)(this["PrintFooter"]));
             }
             set {
                 this["PrintFooter"] = value;
@@ -49,10 +49,10 @@ namespace CardfileDotNet.Properties {
         
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("false")]
-        public global::CardfileDotNet.Data.MaybeString PrintHeader {
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PrintHeader {
             get {
-                return ((global::CardfileDotNet.Data.MaybeString)(this["PrintHeader"]));
+                return ((string)(this["PrintHeader"]));
             }
             set {
                 this["PrintHeader"] = value;
