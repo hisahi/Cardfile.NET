@@ -35,6 +35,7 @@ namespace CardfileDotNet.UI
             fileUpdateDialog.UpdateRequest += FileUpdateDialog_UpdateRequest;
             fileSystemWatcher.EnableRaisingEvents = false;
             fileSystemWatcher.NotifyFilter = NotifyFilters.LastWrite | NotifyFilters.Size;
+            listViewFile.Resize += (s, e) => RecenterIcon();
         }
 
         public override void Localize()
@@ -109,6 +110,7 @@ namespace CardfileDotNet.UI
                     listViewFile.Items.Add(fileItem);
                     fileItem.ImageIndex = 0;
                     listViewFile.Visible = true;
+                    RecenterIcon();
                     break;
                 case PreviewType.Image:
                     MemoryStream imgStream = new MemoryStream(File.Data);
@@ -127,6 +129,18 @@ namespace CardfileDotNet.UI
                     UpdatePictureBoxPosition();
                     pictureBoxImagePreview.Visible = true;
                     break;
+            }
+        }
+
+        private void RecenterIcon()
+        {
+            if (listViewFile.Items.Count > 0)
+            {
+                var item = listViewFile.Items[0];
+                int viewWidth = listViewFile.Width, viewHeight = listViewFile.Height;
+                int itemWidth = SystemInformation.IconSpacingSize.Width, itemHeight = SystemInformation.IconSpacingSize.Height;
+                item.EnsureVisible();
+                item.Position = new Point(Math.Max(0, (viewWidth - itemWidth) / 2), Math.Max(0, (viewHeight - itemHeight) / 2));
             }
         }
 

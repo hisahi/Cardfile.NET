@@ -117,6 +117,7 @@
             // 
             // listViewFile
             // 
+            this.listViewFile.AutoArrange = false;
             this.listViewFile.Dock = System.Windows.Forms.DockStyle.Fill;
             this.listViewFile.HideSelection = false;
             this.listViewFile.LargeImageList = this.iconImageList;
