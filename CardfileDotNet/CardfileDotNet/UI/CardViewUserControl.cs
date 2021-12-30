@@ -194,24 +194,12 @@ namespace CardfileDotNet.UI
 
         private void OnItemDeleted(int index)
         {
-            int front = State.File.FrontIndex;
-            int count = State.File.CardCount;
             if (cardControls.Count < ViewCardCount)
             {
                 RemoveCardControl(index);
-                FullCardMove();
-                return;
             }
 
-            int first = front;
-            int last = (front + ViewCardCount) % count;
-            if ((first < last && (first <= index && index < last)) || (last < first && (first <= index || index < last)))
-            {
-                int baseIndex = index - first;
-                RemoveCardControl(baseIndex);
-                FullCardMove();
-                return;
-            }
+            FullCardAssign();
         }
 
         public void Commit()
