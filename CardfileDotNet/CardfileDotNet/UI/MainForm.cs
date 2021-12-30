@@ -966,7 +966,7 @@ namespace CardfileDotNet.UI
                 for (int i = 1; i <= State.File.CardCount; ++i)
                 {
                     index = (front + i) % State.File.CardCount;
-                    if (State.File.Cards[index].Index.StartsWith(goToDialog.Value))
+                    if (State.File.Cards[index].Index.StartsWith(goToDialog.Value, StringComparison.OrdinalIgnoreCase))
                     {
                         State.File.FrontIndex = index;
                         return;
