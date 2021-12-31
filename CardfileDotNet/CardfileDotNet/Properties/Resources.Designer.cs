@@ -19,7 +19,7 @@ namespace CardfileDotNet.Properties {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -96,7 +96,8 @@ namespace CardfileDotNet.Properties {
         ///SaveFilter=Cardfile.NET file, compressed (*.CRDX)|*.CRDX|Cardfile.NET file (*.CRDX)|*.CRDX|All files (*.*)|*
         ///ImportAttachmentFilter=All files (*.*)|*
         ///ExportAttachmentFilter={1} (*{0})|*{0}|All files (*.*)|*
-        ///ExportAttachmentFilterNoExt=All files (*.*) [rest of string was truncated]&quot;;.
+        ///ExportAttachmentFilterNoExt=All files (*.*)|*
+        ///UnknownExten [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string lang_en_US {
             get {
@@ -119,7 +120,7 @@ namespace CardfileDotNet.Properties {
         ///OpenFilter=Cardfile.NET-kortistotiedosto (*.CRDX)|*.CRDX|Klassinen kortistotiedosto (*.CRD)|*.CRD|Kaikki tiedostot (*.*)|*
         ///SaveFilter=Cardfile.NET-kortistotiedosto, pakattu (*.CRDX)|*.CRDX|Cardfile.NET-kortistotiedosto (*.CRDX)|*.CRDX|Kaikki tiedostot (*.*)|*
         ///ImportAttachmentFilter=Kaikki tiedostot (*.*)|*
-        ///ExportAttachmentFilter={1} (*{0})| [rest of string was truncated]&quot;;.
+        ///ExportAttachmentFilter={1} (*{0})|*{0}|Kaikki ti [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string lang_fi_FI {
             get {

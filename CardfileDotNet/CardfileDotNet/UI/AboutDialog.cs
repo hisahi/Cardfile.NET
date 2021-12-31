@@ -31,7 +31,7 @@ namespace CardfileDotNet.UI
             this.Text = Language.GetMenuText("helpAboutToolStripMenuItem.Text");
             this.labelName.Text = Language.Get("ProgramName", "Cardfile.NET");
             this.labelDescription.Text = Language.Get("ProgramInspiration", "A modern recreation of the \"Cardfile\" program in older versions of Windows.");
-            this.labelAuthor.Text = string.Format(Language.Get("AuthorInfo", "by {0} and {1}"), "Sampo Hippeläinen (hisahi) 2020", "Cardfile.NET Team");
+            this.labelAuthor.Text = string.Format(Language.Get("AuthorInfo", "by {0} and {1}"), "Sampo Hippeläinen (hisahi) 2020-2022", "Cardfile.NET Team");
             this.labelVersion.Text = string.Format(Language.Get("ProgramVersion", "program version {0}"), MainForm.Version);
         }
     }
